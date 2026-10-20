@@ -1,0 +1,37 @@
+[
+  {
+    "id": "2021120500",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-5-23-27-0-el-sisap-hara-retencion-de-servicios-toda-esta-semana",
+    "errores": [
+      "Clave vacía: observaciones"
+    ]
+  },
+  {
+    "id": "2021120700",
+    "link": "https://www.elchubut.com.ar/rawson/2021-12-7-22-52-0-vecinos-de-zona-de-chacras-plantearon-a-biss-la-necesidad-de-contar-con-agua-y-energia-electrica",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  },
+  {
+    "id": "2021120900",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-9-23-31-0-antimineros-realizaron-un-escrache-en-la-casa-de-rafa-williams-en-esquel-y-hubo-momentos-de-tension",
+    "errores": [
+      "Disrupción=1 implica intensidad mínima media"
+    ]
+  },
+  {
+    "id": "2021120902",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-9-22-7-0-vecinos-cortaron-la-ruta-en-gobernador-costa-por-falta-de-luz",
+    "errores": [
+      "Clave vacía: observaciones"
+    ]
+  },
+  {
+    "id": "2021121000",
+    "link": "https://www.elchubut.com.ar/puerto-madryn/2021-12-10-21-39-0-marcha-en-pedido-de-justicia-por-la-denuncia-publica-de-multiples-abusos",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  }
+]

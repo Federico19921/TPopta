@@ -1,0 +1,89 @@
+[
+  {
+    "id": "2021103101",
+    "link": "https://www.elchubut.com.ar/regionales/2021-10-31-22-57-0-habra-hoy-un-paro-de-los-auxiliares-de-educacion",
+    "errores": [
+      "Clave vacía: observaciones"
+    ]
+  },
+  {
+    "id": "2021110401",
+    "link": "https://www.elchubut.com.ar/regionales/2021-11-4-22-46-0-el-sisap-volveria-a-reclamar-hoy-frente-al-ministerio-de-salud",
+    "errores": [
+      "Clave vacía: observaciones"
+    ]
+  },
+  {
+    "id": "2021110701",
+    "link": "https://www.elchubut.com.ar/puerto-madryn/2021-11-7-20-43-0-unidos-y-organizados-reclamo-a-turismo-la-apertura-de-accesos-a-todas-las-playas-de-peninsula-valdes",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  },
+  {
+    "id": "2021110900",
+    "link": "https://www.elchubut.com.ar/esquel/2021-11-9-23-59-0-reclamo-de-trabajadores-paralizo-la-recoleccion-de-residuos-y-el-sem",
+    "errores": [
+      "Falta clave: localidad",
+      "Falta clave: actores_participantes",
+      "Falta clave: demanda_principal",
+      "Falta clave: tipo_accion",
+      "Falta clave: tipo_accion_detalle",
+      "Falta clave: disrupcion",
+      "Falta clave: escala",
+      "Falta clave: intensidad",
+      "Falta clave: respuesta_estatal",
+      "Falta clave: presencia_policial",
+      "Falta clave: accionar_policial",
+      "Falta clave: tipo_intervencion_estatal",
+      "Falta clave: uso_fuerza",
+      "Falta clave: heridos",
+      "Falta clave: detenciones",
+      "Falta clave: judicializacion",
+      "Falta clave: coord_interinstitucional",
+      "Falta clave: canales_informales",
+      "Falta clave: amenaza_politica",
+      "Falta clave: resultado_episodio",
+      "Falta clave: fuente",
+      "Falta clave: observaciones",
+      "Falta clave: notas_estandarizacion"
+    ]
+  },
+  {
+    "id": "2021111001",
+    "link": "https://www.elchubut.com.ar/regionales/2021-11-10-22-30-0-marcha-contra-el-hambre-del-consejo-de-bienestar-policial-en-trelew",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle",
+      "Clave vacía: observaciones"
+    ]
+  },
+  {
+    "id": "2021111004",
+    "link": "https://www.elchubut.com.ar/regionales/2021-11-10-22-24-0-nuestra-idea-es-hacer-prevalecer-el-conocimiento-cientifico-y-el-tecnico-de-la-mineria-por-sobre-los-fanatismos-y-la-violencia",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  },
+  {
+    "id": "2021111100",
+    "link": "https://www.elchubut.com.ar/regionales/2021-11-11-22-1-0-se-movilizo-el-consejo-de-bienestar-policial-y-espera-con-nulas-expectativas-la-reunion-con-el-gobierno",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle",
+      "Clave vacía: observaciones"
+    ]
+  },
+  {
+    "id": "2021111200",
+    "link": "https://www.elchubut.com.ar/regionales/2021-11-12-23-26-0-por-un-conflicto-gremial-casi-se-tiran-200-toneladas-de-langostino",
+    "errores": [
+      "Represión (3) implica uso de fuerza=1"
+    ]
+  },
+  {
+    "id": "2021111801",
+    "link": "https://www.elchubut.com.ar/policiales/2021-11-18-22-46-0-marcharon-por-justicia-para-maximiliano",
+    "errores": [
+      "Clave vacía: observaciones"
+    ]
+  }
+]

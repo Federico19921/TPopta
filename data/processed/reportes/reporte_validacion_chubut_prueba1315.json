@@ -1,0 +1,31 @@
+[
+  {
+    "id": "2021112400",
+    "link": "https://www.elchubut.com.ar/regionales/2021-11-24-23-45-0-el-paro-del-sisap-incluira-un-reclamo-en-el-ministerio-de-salud",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  },
+  {
+    "id": "2021112500",
+    "link": "https://www.elchubut.com.ar/regionales/2021-11-25-22-43-0-trelew-marcho-contra-la-violencia-de-genero",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle",
+      "Clave vacía: observaciones"
+    ]
+  },
+  {
+    "id": "2021112600",
+    "link": "https://www.elchubut.com.ar/regionales/2021-11-26-23-40-0-la-justicia-federal-sobreseyo-a-hompanera-que-habia-sido-acusado-por-protestar-en-la-ruta-25",
+    "errores": [
+      "Clave vacía: observaciones"
+    ]
+  },
+  {
+    "id": "2021112800",
+    "link": "https://www.elchubut.com.ar/puerto-madryn/2021-11-28-21-25-0-se-realizo-la-marcha-por-la-legalizacion-del-cannabis",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  }
+]

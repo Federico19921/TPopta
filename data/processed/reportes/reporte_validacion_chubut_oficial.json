@@ -1,0 +1,395 @@
+[
+  {
+    "id": "2021110202",
+    "link": "https://www.elchubut.com.ar/esquel/2021-11-2-22-22-0-perez-catan-viene-a-esquel-a-reunirse-con-mapuches-que-ocupan-oficinas-del-iac",
+    "errores": [
+      "Falta clave: localidad",
+      "Falta clave: actores_participantes",
+      "Falta clave: demanda_principal",
+      "Falta clave: tipo_accion",
+      "Falta clave: tipo_accion_detalle",
+      "Falta clave: disrupcion",
+      "Falta clave: escala",
+      "Falta clave: intensidad",
+      "Falta clave: respuesta_estatal",
+      "Falta clave: presencia_policial",
+      "Falta clave: accionar_policial",
+      "Falta clave: tipo_intervencion_estatal",
+      "Falta clave: uso_fuerza",
+      "Falta clave: heridos",
+      "Falta clave: detenciones",
+      "Falta clave: judicializacion",
+      "Falta clave: coord_interinstitucional",
+      "Falta clave: canales_informales",
+      "Falta clave: amenaza_politica",
+      "Falta clave: resultado_episodio",
+      "Falta clave: fuente",
+      "Falta clave: observaciones",
+      "Falta clave: notas_estandarizacion"
+    ]
+  },
+  {
+    "id": "2021110300",
+    "link": "https://www.elchubut.com.ar/regionales/2021-11-3-22-36-0-el-sindicato-de-salud-publica-inicia-un-paro-de-48-horas",
+    "errores": [
+      "Clave vacía: observaciones"
+    ]
+  },
+  {
+    "id": "2021110600",
+    "link": "https://www.elchubut.com.ar/edicion-impresa/2021-11-6-23-51-0-comodoro-marcho-para-pedir-justicia-por-el-femicidio-de-la-profesora-daniela-velasco",
+    "errores": [
+      "Clave vacía: observaciones"
+    ]
+  },
+  {
+    "id": "2021110900",
+    "link": "https://www.elchubut.com.ar/esquel/2021-11-9-23-59-0-reclamo-de-trabajadores-paralizo-la-recoleccion-de-residuos-y-el-sem",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  },
+  {
+    "id": "2021111001",
+    "link": "https://www.elchubut.com.ar/regionales/2021-11-10-22-30-0-marcha-contra-el-hambre-del-consejo-de-bienestar-policial-en-trelew",
+    "errores": [
+      "Clave vacía: observaciones"
+    ]
+  },
+  {
+    "id": "2021111200",
+    "link": "https://www.elchubut.com.ar/regionales/2021-11-12-23-26-0-por-un-conflicto-gremial-casi-se-tiran-200-toneladas-de-langostino",
+    "errores": [
+      "Represión (3) implica uso de fuerza=1"
+    ]
+  },
+  {
+    "id": "2021111800",
+    "link": "https://www.elchubut.com.ar/puerto-madryn/2021-11-18-22-7-0-policias-de-la-ciudad-madrynense-realizan-protestas-en-las-afueras-de-la-comisaria-primera",
+    "errores": [
+      "Falta clave: localidad",
+      "Falta clave: actores_participantes",
+      "Falta clave: demanda_principal",
+      "Falta clave: tipo_accion",
+      "Falta clave: tipo_accion_detalle",
+      "Falta clave: disrupcion",
+      "Falta clave: escala",
+      "Falta clave: intensidad",
+      "Falta clave: respuesta_estatal",
+      "Falta clave: presencia_policial",
+      "Falta clave: accionar_policial",
+      "Falta clave: tipo_intervencion_estatal",
+      "Falta clave: uso_fuerza",
+      "Falta clave: heridos",
+      "Falta clave: detenciones",
+      "Falta clave: judicializacion",
+      "Falta clave: coord_interinstitucional",
+      "Falta clave: canales_informales",
+      "Falta clave: amenaza_politica",
+      "Falta clave: resultado_episodio",
+      "Falta clave: fuente",
+      "Falta clave: observaciones",
+      "Falta clave: notas_estandarizacion"
+    ]
+  },
+  {
+    "id": "2021111900",
+    "link": "https://www.elchubut.com.ar/regionales/2021-11-19-23-4-0-en-un-dia-tenso-el-gobierno-acerco-una-propuesta-salarial-pero-aun-no-logro-acordar-con-policias",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  },
+  {
+    "id": "2021112100",
+    "link": "https://www.elchubut.com.ar/regionales/2021-11-21-23-38-0-arcioni-ratifico-el-incremento-salarial-policial-y-el-cobipol-garantizara-la-paz-social-en-chubut",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  },
+  {
+    "id": "2021112500",
+    "link": "https://www.elchubut.com.ar/regionales/2021-11-25-22-43-0-trelew-marcho-contra-la-violencia-de-genero",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle",
+      "Clave vacía: observaciones"
+    ]
+  },
+  {
+    "id": "2021112502",
+    "link": "https://www.elchubut.com.ar/esquel/2021-11-25-23-41-0-vecinos-en-emergencia-realizaron-una-nueva-manifestacion-por-tarifa-popular",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  },
+  {
+    "id": "2021113001",
+    "link": "https://www.elchubut.com.ar/regionales/2021-11-30-23-13-0-vecinos-autoconvocados-de-los-aromos-piden-al-municipio-que-llame-a-elecciones-barriales",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  },
+  {
+    "id": "2021120900",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-9-23-31-0-antimineros-realizaron-un-escrache-en-la-casa-de-rafa-williams-en-esquel-y-hubo-momentos-de-tension",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  },
+  {
+    "id": "2021121000",
+    "link": "https://www.elchubut.com.ar/puerto-madryn/2021-12-10-21-39-0-marcha-en-pedido-de-justicia-por-la-denuncia-publica-de-multiples-abusos",
+    "errores": [
+      "Clave vacía: observaciones"
+    ]
+  },
+  {
+    "id": "2021121003",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-10-23-6-0-ongarato-cuestiono-la-actitud-de-grupos-violentos-antidemocraticos-con-los-que-no-se-puede-hablar",
+    "errores": [
+      "Disrupción=1 implica intensidad mínima media"
+    ]
+  },
+  {
+    "id": "2021121600",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-16-23-35-0-manifestantes-incendiaron-casa-de-gobierno-y-el-superior-tribunal",
+    "errores": [
+      "Valor inválido en heridos: 30",
+      "Valor inválido en detenciones: 7"
+    ]
+  },
+  {
+    "id": "2021121602",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-16-23-31-0-sin-la-actuacion-de-la-policia-hubiera-sido-todo-mucho-mas-grave-manifesto-el-ministro-das-neves",
+    "errores": [
+      "Valor inválido en heridos: 32"
+    ]
+  },
+  {
+    "id": "2021121701",
+    "link": "https://www.elchubut.com.ar/esquel/2021-12-17-22-58-0-policia-custodia-edificios-publicos-para-evitar-danos",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  },
+  {
+    "id": "2021121706",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-17-23-0-0-en-chubut-eclosiono-la-violencia-que-se-viene-ejerciendo-sobre-la-sociedad",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  },
+  {
+    "id": "2021121800",
+    "link": "https://www.elchubut.com.ar/puerto-madryn/2021-12-18-21-46-0-rodanteros-se-movilizaron-contra-nuevos-requisitos-para-circular",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  },
+  {
+    "id": "2021121801",
+    "link": "https://www.elchubut.com.ar/puerto-madryn/2021-12-18-21-22-0-nueva-marcha-en-la-ciudad-contra-la-ley-minera",
+    "errores": [
+      "Clave vacía: observaciones"
+    ]
+  },
+  {
+    "id": "2021121803",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-18-23-16-0-hubo-una-nueva-marcha-en-trelew-contra-la-zonificacion-minera",
+    "errores": [
+      "Clave vacía: observaciones"
+    ]
+  },
+  {
+    "id": "2021121900",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-19-0-14-0-siento-una-verdadera-pena-dijo-lizurume-sobre-la-quema-de-la-casa-de-gobierno-que-reconstruyo-en-su-gestion",
+    "errores": [
+      "Clave vacía: observaciones"
+    ]
+  },
+  {
+    "id": "2021121903",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-19-0-9-0-seguimos-reclamando-el-respeto-a-la-voluntad-de-nuestros-vecinos-manifestada-mediante-su-voto",
+    "errores": [
+      "Clave vacía: observaciones"
+    ]
+  },
+  {
+    "id": "2021121905",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-19-0-6-0-biss-pidio-la-derogacion-de-la-zonificacion-minera-y-convocar-a-una-consulta-popular",
+    "errores": [
+      "Clave vacía: observaciones"
+    ]
+  },
+  {
+    "id": "2021121910",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-19-21-39-0-hubo-nuevas-marchas-contra-la-mineria-en-trelew-y-rawson",
+    "errores": [
+      "Falta clave: localidad",
+      "Falta clave: actores_participantes",
+      "Falta clave: demanda_principal",
+      "Falta clave: tipo_accion",
+      "Falta clave: tipo_accion_detalle",
+      "Falta clave: disrupcion",
+      "Falta clave: escala",
+      "Falta clave: intensidad",
+      "Falta clave: respuesta_estatal",
+      "Falta clave: presencia_policial",
+      "Falta clave: accionar_policial",
+      "Falta clave: tipo_intervencion_estatal",
+      "Falta clave: uso_fuerza",
+      "Falta clave: heridos",
+      "Falta clave: detenciones",
+      "Falta clave: judicializacion",
+      "Falta clave: coord_interinstitucional",
+      "Falta clave: canales_informales",
+      "Falta clave: amenaza_politica",
+      "Falta clave: resultado_episodio",
+      "Falta clave: fuente",
+      "Falta clave: observaciones",
+      "Falta clave: notas_estandarizacion"
+    ]
+  },
+  {
+    "id": "2021122102",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-21-10-26-0-hubo-otra-marcha-en-rawson",
+    "errores": [
+      "Clave vacía: observaciones"
+    ]
+  },
+  {
+    "id": "2021122103",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-21-10-25-0-hoy-sesionara-la-legislatura-y-tratara-la-derogacion",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  },
+  {
+    "id": "2021122104",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-21-10-22-0-corte-durante-toda-la-manana-y-por-la-tarde-en-ruta-3",
+    "errores": [
+      "Falta clave: localidad",
+      "Falta clave: actores_participantes",
+      "Falta clave: demanda_principal",
+      "Falta clave: tipo_accion",
+      "Falta clave: tipo_accion_detalle",
+      "Falta clave: disrupcion",
+      "Falta clave: escala",
+      "Falta clave: intensidad",
+      "Falta clave: respuesta_estatal",
+      "Falta clave: presencia_policial",
+      "Falta clave: accionar_policial",
+      "Falta clave: tipo_intervencion_estatal",
+      "Falta clave: uso_fuerza",
+      "Falta clave: heridos",
+      "Falta clave: detenciones",
+      "Falta clave: judicializacion",
+      "Falta clave: coord_interinstitucional",
+      "Falta clave: canales_informales",
+      "Falta clave: amenaza_politica",
+      "Falta clave: resultado_episodio",
+      "Falta clave: fuente",
+      "Falta clave: observaciones",
+      "Falta clave: notas_estandarizacion"
+    ]
+  },
+  {
+    "id": "2021122105",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-21-10-21-0-maderna-dijo-no-sentirse-aludido-cuando-se-habla-de-un-autor-ideologico-de-los-destrozos-en-rawson",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  },
+  {
+    "id": "2021122107",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-21-10-20-0-el-stj-mantiene-su-funcionamiento-a-pesar-de-las-dificultades-edilicias",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  },
+  {
+    "id": "2021122109",
+    "link": "https://www.elchubut.com.ar/puerto-madryn/2021-12-21-9-39-0-autoconvocados-de-la-pesca-cortaron-la-ruta-por-la-ley-de-zonificacion-minera-y-la-ley-de-pesca",
+    "errores": [
+      "Clave vacía: observaciones"
+    ]
+  },
+  {
+    "id": "2021122201",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-22-22-50-0-se-promulgo-la-derogacion-de-la-ley-de-zonificacion-minera-en-chubut",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  },
+  {
+    "id": "2021122601",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-26-0-13-0-maderna-debe-ser-investigado-mando-ocho-colectivos-a-rawson-y-no-para-hacer-chorizos",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle",
+      "Clave vacía: observaciones"
+    ]
+  },
+  {
+    "id": "2021122605",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-26-22-23-0-para-la-ucr-de-trelew-no-hay-nada-que-celebrar-sino-recapacitar-ante-el-vandalismo-de-los-ultimos-dias",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  },
+  {
+    "id": "2021122701",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-27-22-57-0-entre-los-detenidos-por-el-ataque-a-el-chubut-hay-miembros-del-mte-que-hacen-tareas-para-el-municipio",
+    "errores": [
+      "Valor inválido en detenciones: 3"
+    ]
+  },
+  {
+    "id": "2021122703",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-27-22-53-0-el-juez-castro-les-otorgo-dos-meses-de-prision-preventiva-a-los-sospechosos",
+    "errores": [
+      "Valor inválido en detenciones: 3"
+    ]
+  },
+  {
+    "id": "2021122800",
+    "link": "https://www.elchubut.com.ar/puerto-madryn/2021-12-28-21-28-0-sastre-puerto-madryn-ha-tenido-la-paz-social-que-todos-necesitamos",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  },
+  {
+    "id": "2021122803",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-28-22-54-0-el-jefe-de-policia-dijo-que-recibio-el-respaldo-del-gobernador-mientras-que-el-ministro-das-neves-no-participo-de-la-reunion",
+    "errores": [
+      "Valor inválido en heridos: 77"
+    ]
+  },
+  {
+    "id": "2021122901",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-29-23-3-0-hubo-allanamientos-por-los-destrozos-e-incendios-en-rawson-y-secuestraron-ropa-celulares-y-marihuana",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  },
+  {
+    "id": "2021122902",
+    "link": "https://www.elchubut.com.ar/regionales/2021-12-29-22-43-0-se-movilizaron-para-pedir-la-liberacion-de-imputados-en-ataques-a-el-chubut",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle",
+      "Clave vacía: observaciones"
+    ]
+  },
+  {
+    "id": "2022010401",
+    "link": "https://www.elchubut.com.ar/regionales/2022-1-4-22-47-0-gonzalez-y-tolomei-dos-razonamientos-polemicos-que-promovieron-la-libertad-de-vandalos",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  },
+  {
+    "id": "2022012600",
+    "link": "https://www.elchubut.com.ar/regionales/2022-1-26-22-50-0-se-desato-la-interna-en-el-chusoto-perez-catan-y-cambarieri-son-sumisos-a-arcioni-dijo-etchepareborda?",
+    "errores": [
+      "Clave vacía: tipo_accion_detalle"
+    ]
+  }
+]
