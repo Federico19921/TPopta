@@ -19,10 +19,26 @@ def aplicar_estilo(fig):
         plot_bgcolor="white",
         paper_bgcolor="white",
         margin=dict(l=0, r=0, t=10, b=40),
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="left", x=0),
+        legend=dict(orientation="h", yanchor="bottom", y=1.02,
+                    xanchor="left", x=0, title=None),
         xaxis=dict(showgrid=False, showline=False, zeroline=False),
-        yaxis=dict(showgrid=True, gridcolor="#F3F4F6", showline=False, zeroline=False)
+        yaxis=dict(showgrid=True, gridcolor="#F3F4F6",
+                   showline=False, zeroline=False),
+        # estas dos solo afectan a bar, son inocuas si no hay barras
+        bargap=0.3,
+        bargroupgap=0.1,
     )
+
+    # Aplicar props específicas según el tipo de trace
+    for tr in fig.data:
+        if tr.type == "bar":
+            tr.update(width=0.4)
+        elif tr.type == "scatter":
+            # si querés controlar la línea/markers:
+            tr.update(line=dict(width=2), marker=dict(size=7))
+        elif tr.type == "heatmap":
+            tr.update(xgap=2, ygap=2)
+
     return fig
 
 df["mes"] = df["fecha"].dt.to_period("M").astype(str)
