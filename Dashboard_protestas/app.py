@@ -26,6 +26,7 @@ navbar = dbc.NavbarSimple(
         dbc.NavItem(dbc.NavLink("Demandas", href="/demandas")),
         dbc.NavItem(dbc.NavLink("Cruces", href="/cruces")),
         dbc.NavItem(dbc.NavLink("Represión", href="/represion")),
+        dbc.NavItem(dbc.NavLink("Contexto ACLED", href="/acled")),
         dbc.NavItem(dbc.NavLink("Métodos", href="/metodos")),
     ],
     style={"borderBottom": "1px solid #E5E7EB"}

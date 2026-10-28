@@ -1,7 +1,6 @@
 import dash
-from dash import html, dcc, Input, Output
+from dash import html, dcc
 import dash_bootstrap_components as dbc
-import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import pandas as pd
@@ -28,21 +27,11 @@ LABELS_DEMANDAS = {"demanda_salarial": "Salarial", "demanda_laboral": "Laboral",
 def aplicar_estilo(fig):
     fig.update_layout(
         font=dict(family="Arial, sans-serif", size=12, color="#4B5563"),
-        plot_bgcolor="white", paper_bgcolor="white",
-        margin=dict(l=0, r=0, t=20, b=40),
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="left", x=0, title=None),
+        plot_bgcolor="white", paper_bgcolor="white", margin=dict(l=0, r=0, t=20, b=40),
         xaxis=dict(showgrid=False, showline=False, zeroline=False),
         yaxis=dict(showgrid=True, gridcolor="#F3F4F6", showline=False, zeroline=False)
     )
     return fig
-
-def chart_box(titulo, subtitulo, fig):
-    return html.Div([
-        html.Div([html.P(titulo, className="chart-title")], className="chart-header"),
-        html.P(subtitulo, className="chart-subtitle"),
-        html.Div(dcc.Graph(figure=fig, config={'displayModeBar': False}), className="chart-body"),
-        html.Div("Fuente: Base propia de eventos.", className="chart-footer")
-    ], className="chart-container")
 
 def construir_matriz(sub):
     matriz = pd.DataFrame(0, index=list(LABELS_ACTORES.values()), columns=list(LABELS_DEMANDAS.values()))
@@ -54,25 +43,49 @@ def construir_matriz(sub):
                 matriz.loc[a, d] += 1
     return matriz.loc[matriz.sum(axis=1) > 0, matriz.sum(axis=0) > 0]
 
+# Calcular matrices
+ch = construir_matriz(df[df["provincia"] == "Chubut"])
+ju = construir_matriz(df[df["provincia"] == "Jujuy"])
+
+todas_act = sorted(set(ch.index) | set(ju.index))
+todas_dem = sorted(set(ch.columns) | set(ju.columns))
+ch = ch.reindex(index=todas_act, columns=todas_dem, fill_value=0)
+ju = ju.reindex(index=todas_act, columns=todas_dem, fill_value=0)
+
+fig_matriz = make_subplots(rows=1, cols=2, subplot_titles=("Chubut", "Jujuy"), shared_yaxes=True, horizontal_spacing=0.08)
+fig_matriz.add_trace(go.Heatmap(z=ch.values, x=todas_dem, y=todas_act, colorscale="Blues", showscale=False,
+                                text=ch.values, texttemplate="%{text}", textfont={"size": 9}), row=1, col=1)
+fig_matriz.add_trace(go.Heatmap(z=ju.values, x=todas_dem, y=todas_act, colorscale="Reds", showscale=False,
+                                text=ju.values, texttemplate="%{text}", textfont={"size": 9}), row=1, col=2)
+fig_matriz.update_layout(height=550, margin=dict(l=160, r=20, t=60, b=140))
+fig_matriz.update_xaxes(tickangle=-45)
+fig_matriz = aplicar_estilo(fig_matriz)
+
 layout = html.Div([
     html.Div("Inicio | Trabajo e ingresos | Cruces", className="breadcrumbs"),
     html.Div([
-        html.H1("Cruces: actores, demandas y represión"),
-        html.P("Análisis de las relaciones entre quién protesta, qué reclama y quién es reprimido.", style={"fontSize": "1.1rem", "color": "#4B5563"}),
+        html.H1("Cruce de actores y demandas"),
+        html.P("Análisis de qué actores sostienen qué reclamos en cada conflicto.", style={"fontSize": "1.1rem", "color": "#4B5563"}),
 
         html.Div([
             html.H4("Mensajes clave", className="mensajes-clave-title"),
             dbc.Row([
-                dbc.Col(html.Div("En Jujuy, la demanda política-legal es la más reprimida (5 de 39 eventos).", className="mensaje-card destacado"), width=6),
-                dbc.Col(html.Div("Los actores con menos recursos institucionales son los más castigados proporcionalmente.", className="mensaje-card"), width=6),
+                dbc.Col(html.Div("En Jujuy, los docentes y las organizaciones sociales concentran las demandas políticas y salariales.", className="mensaje-card"), width=6),
+                dbc.Col(html.Div("En Chubut, los vecinos y los colectivos ambientales son el núcleo de la demanda territorial.", className="mensaje-card destacado"), width=6),
             ])
         ], className="mensajes-clave-wrapper"),
 
         html.Div([
-            dbc.Checklist(id="cruces-solo-represion", options=[{"label": "Mostrar solo eventos con represión", "value": "si"}], value=[], switch=True)
-        ], style={"marginBottom": "24px", "fontWeight": "bold"}),
+            html.Div([html.P("Matriz Actor × Demanda", className="chart-title")], className="chart-header"),
+            html.P("Cantidad de eventos donde coexisten un actor y una demanda. Azul: Chubut, Rojo: Jujuy.", className="chart-subtitle"),
+            html.Div(dcc.Graph(figure=fig_matriz, config={'displayModeBar': False}), className="chart-body"),
+            html.Div("Fuente: Base propia de eventos.", className="chart-footer")
+        ], className="chart-container"),
 
-        html.Div(id="contenedor-cruces"),
+        html.Div([
+            html.H5("El cruce de actores y demandas"),
+            html.P("Mientras que en Chubut el reclamo territorial (ambiental) es sostenido principalmente por vecinos y colectivos ambientales, en Jujuy los docentes son el actor protagónico que articula demandas salariales y políticas. Las comunidades indígenas, por su parte, sostienen demandas de derechos específicos y territoriales.")
+        ], className="hallazgo-box"),
 
         html.Div([
             dcc.Link("← Volver", href="/demandas", className="btn btn-outline-secondary"),
@@ -80,65 +93,3 @@ layout = html.Div([
         ], style={"marginTop": "40px", "overflow": "hidden"}),
     ], className="page-container")
 ])
-
-@dash.callback(
-    Output("contenedor-cruces", "children"),
-    Input("cruces-solo-represion", "value")
-)
-def actualizar(solo_rep):
-    dff = df.copy()
-    if "si" in solo_rep:
-        dff = dff[dff["es_represion"] == 1]
-
-    ch = construir_matriz(dff[dff["provincia"] == "Chubut"])
-    ju = construir_matriz(dff[dff["provincia"] == "Jujuy"])
-    todas_act = sorted(set(ch.index) | set(ju.index))
-    todas_dem = sorted(set(ch.columns) | set(ju.columns))
-    ch = ch.reindex(index=todas_act, columns=todas_dem, fill_value=0)
-    ju = ju.reindex(index=todas_act, columns=todas_dem, fill_value=0)
-
-    if todas_act and todas_dem:
-        fig_matriz = make_subplots(rows=1, cols=2, subplot_titles=("Chubut", "Jujuy"), shared_yaxes=True, horizontal_spacing=0.08)
-        fig_matriz.add_trace(go.Heatmap(z=ch.values, x=todas_dem, y=todas_act, colorscale="Blues", showscale=False,
-                                        text=ch.values, texttemplate="%{text}", textfont={"size": 9}), row=1, col=1)
-        fig_matriz.add_trace(go.Heatmap(z=ju.values, x=todas_dem, y=todas_act, colorscale="Reds", showscale=False,
-                                        text=ju.values, texttemplate="%{text}", textfont={"size": 9}), row=1, col=2)
-        fig_matriz.update_layout(height=550, margin=dict(l=160, r=20, t=60, b=140))
-        fig_matriz.update_xaxes(tickangle=-45)
-        fig_matriz = aplicar_estilo(fig_matriz)
-    else:
-        fig_matriz = px.bar(title="Sin datos")
-
-    datos_actor = []
-    for prov in ["Chubut", "Jujuy"]:
-        sub_p = dff[dff["provincia"] == prov]
-        for actor in COLS_ACTORES:
-            sub_a = sub_p[sub_p[actor] == 1]
-            if len(sub_a) >= 3:
-                n_rep = sub_a["es_represion"].sum()
-                datos_actor.append({"provincia": prov, "actor": LABELS_ACTORES[actor], "n": len(sub_a), "%_rep": round(100 * n_rep / len(sub_a), 1)})
-    
-    fig_actor = px.bar(pd.DataFrame(datos_actor).sort_values("%_rep"), x="%_rep", y="actor", color="provincia", orientation="h", barmode="group",
-                       color_discrete_map={"Chubut": "#2E86AB", "Jujuy": "#A23B72"}, labels={"%_rep": "% eventos reprimidos", "actor": "", "provincia": ""}) if datos_actor else px.bar(title="Sin datos")
-    fig_actor.update_layout(height=400)
-    fig_actor = aplicar_estilo(fig_actor)
-
-    datos_dem = []
-    for prov in ["Chubut", "Jujuy"]:
-        sub_p = dff[dff["provincia"] == prov]
-        for dem in COLS_DEMANDAS:
-            sub_d = sub_p[sub_p[dem] == 1]
-            if len(sub_d) >= 3:
-                n_rep = sub_d["es_represion"].sum()
-                datos_dem.append({"provincia": prov, "demanda": LABELS_DEMANDAS[dem], "n": len(sub_d), "%_rep": round(100 * n_rep / len(sub_d), 1)})
-    
-    fig_dem = px.bar(pd.DataFrame(datos_dem).sort_values("%_rep"), x="%_rep", y="demanda", color="provincia", orientation="h", barmode="group",
-                     color_discrete_map={"Chubut": "#2E86AB", "Jujuy": "#A23B72"}, labels={"%_rep": "% eventos reprimidos", "demanda": "", "provincia": ""}) if datos_dem else px.bar(title="Sin datos")
-    fig_dem.update_layout(height=400)
-    fig_dem = aplicar_estilo(fig_dem)
-
-    return html.Div([
-        chart_box("Matriz Actor × Demanda", "Cantidad de eventos donde coexisten ambos.", fig_matriz),
-        chart_box("Represión por actor", "Porcentaje de eventos de cada actor que sufrieron represión.", fig_actor),
-        chart_box("Represión por demanda", "Porcentaje de eventos de cada demanda que sufrieron represión.", fig_dem)
-    ])
